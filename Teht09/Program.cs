@@ -10,13 +10,20 @@ namespace Teht09
     {
         static void Main(string[] args)
         {
-            int luku;
-            Console.Write("Anna luku > ");
-            luku = int.Parse(Console.ReadLine());
+            // huonompi tapa!!
+            /*int luku = -1;
             while (luku != 0)
             {
                 Console.Write("Anna luku > ");
-            }
+                luku = int.Parse(Console.ReadLine());
+            }*/
+            int luku;
+            int sum = 0;
+            do
+            {
+                Console.Write("Anna luku > ");
+                luku = int.Parse(Console.ReadLine());
+            } while (luku != 0);
         }
     }
 }
