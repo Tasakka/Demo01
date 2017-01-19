@@ -13,14 +13,10 @@ namespace Teht07
             int year;
             Console.Write("Anna vuosi > ");
             year = int.Parse(Console.ReadLine());
-            if (year % 4 == 0 || year % 400 == 0)
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
             {
                 Console.WriteLine("Vuosi on karkausvuosi.");
             }
-            /*else if (year % 400 == 0)
-            {
-                Console.WriteLine("Vuosi on karkausvuosi.");
-            }*/
             else
             {
                 Console.WriteLine("Vuosi ei ole karkausvuosi.");
