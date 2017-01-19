@@ -23,7 +23,9 @@ namespace Teht09
             {
                 Console.Write("Anna luku > ");
                 luku = int.Parse(Console.ReadLine());
+                sum += luku;
             } while (luku != 0);
+            Console.WriteLine("Kaikkien lukujen summa: " + sum);
         }
     }
 }
